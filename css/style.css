@@ -1,0 +1,7 @@
+#content {
+  text-align: center;
+}
+  #content p {
+    text-align: justify;
+    margin: auto 10%;
+  }

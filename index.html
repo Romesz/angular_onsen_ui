@@ -1,0 +1,33 @@
+<!--
+http://onsen.io/guide/overview.html#LoadingOnsenUIinYourProject
+-->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Onsen Ui</title>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://cdn.rawgit.com/OnsenUI/OnsenUI/master/app/lib/onsen/css/onsenui.css"/>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/OnsenUI/OnsenUI/master/app/lib/onsen/css/onsen-css-components.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+    <script src="https://cdn.rawgit.com/OnsenUI/OnsenUI/master/app/lib/onsen/js/onsenui.min.js"></script>
+    <script src="js/contoller.js"></script>
+  </head>
+  <body ng-controller="PageController">
+    
+    <ons-sliding-menu
+      main-page="view/page1.html"
+      menu-page="view/menu.html"
+      side="left"
+      var="menu">
+    </ons-sliding-menu>
+    
+    <!-- templates located in /View -->
+    <script type="text/ons-template" id="page1.html"></script>
+    <script type="text/ons-template" id="page2.html"></script>
+    <script type="text/ons-template" id="menu.html"></script>
+  </body>
+</html>
